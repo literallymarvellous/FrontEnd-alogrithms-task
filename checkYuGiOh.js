@@ -10,13 +10,13 @@ function checkYuGiOh(n) {
         if (i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0) {
             str = i;        
         }
-        if(i % 2 == 0) {
+        if(i % 2 === 0) {
             str += "yu "
         } 
-        if (i % 3 == 0) {
+        if (i % 3 === 0) {
             str += "gi "
         } 
-        if (i % 5 == 0) {
+        if (i % 5 === 0) {
             str += "oh "
         } 
         if (Number.isInteger(str)) {str} 
