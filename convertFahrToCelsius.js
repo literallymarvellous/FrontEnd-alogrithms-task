@@ -8,4 +8,3 @@ function convertFahrToCelsius(n) {
     let num = Number(n);
     return ((num - 32) / 1.8).toFixed(4);
 }
-console.log(convertFahrToCelsius());

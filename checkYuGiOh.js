@@ -1,6 +1,6 @@
 
 function checkYuGiOh(n) {
-    if (!Number(n)) {
+    if (typeof(n) === 'boolean' || !Number(n)) {
         return (n instanceof Object) ? `invalid parameter: ${JSON.stringify(n)}` : `invalid parameter: ${n}`
     };
     n = Number(n);
@@ -28,4 +28,3 @@ function checkYuGiOh(n) {
     }
     return newArray;
 };
-
